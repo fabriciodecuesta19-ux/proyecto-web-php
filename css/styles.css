@@ -1,0 +1,96 @@
+/* css/styles.css */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #ecf0f1;
+    --text-color: #333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding-bottom: 60px; }
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-color);
+}
+header h1 { font-size: 1.8rem; }
+
+/* Menú de navegación */
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover { color: var(--accent-color); }
+
+/* Contenedor principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 { color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; }
+h3 { color: var(--primary-color); margin: 15px 0 10px 0; }
+
+/* Cajas de resultados y tablas */
+.box {
+    background: #f8f9fa;
+    border-left: 4px solid var(--accent-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+th { background-color: var(--primary-color); color: white; }
+
+/* Info de sesión */
+.session-info {
+    background-color: #e8f8f5;
+    border: 1px solid #a2d9ce;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.session-info strong { color: #117a65; }
+.session-info span { color: #2c3e50; font-weight: bold; }
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover { background: #c0392b; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
